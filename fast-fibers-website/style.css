@@ -1,0 +1,67 @@
+body{
+    background-color:black;
+    color: beige;
+    font-family: times new roman;
+    font-size: 20px;
+     padding: 0px;              
+      margin: 0;                   
+      
+    }
+
+.subscribe-button {
+  display: inline-block;
+  text-decoration: none;
+  text-align: center;
+ background-color: red;
+  color: white;
+  font-size: 18px;
+  padding: 14px 28px;
+  border: none;
+  border-radius: 50px;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+  animation: bounce 2s infinite;
+ 
+}
+
+.subscribed{
+  background-color: grey;
+  color: black
+}
+#subscribe-button:disabled{
+  background-color: grey;
+  color: black;
+  cursor: not-allowed;
+}
+.mpesa-button {
+  display: inline-block;
+  text-decoration: none;
+  text-align: center;
+  background-color: rgb(95, 252, 95);
+  color: white;
+  font-size: 18px;
+  padding: 14px 28px;
+  border: none;
+  border-radius: 50px;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+.paypal-button {
+  display: inline-block;
+  text-decoration: none;
+  text-align: center;
+  background-color: rgb(0, 64, 255);
+  color: black;
+  font-size: 18px;
+  padding: 14px 28px;
+  border: none;
+  border-radius: 50px;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+ 

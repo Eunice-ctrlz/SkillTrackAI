@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skill AI</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+ <h1>
+    <span>S</span>
+    <span>K</span>
+    <span>I</span>
+    <span>L</span>
+    <span>L</span>
+    <span>T</span>
+    <span>R</span>
+    <span>A</span>
+    <span>C</span>
+    <span>K</span>
+    <span>A</span>
+    <span>I</span>
+
+ </h1>
+ <br>
+ <h2><strong>Your path to future success</strong></h2>
+ <div class ="box-container">
+    <div class="box">
+
+    <p><strong> Learning Path with the use of AI Technology for any Skill.</strong></p>
+    <p>Welcome to SkillTrackAI! Here, we leverage the power of artificial intelligence to create personalized learning paths for any skill you wish to master.
+    <br> Whether you're looking to learn a new language, improve your coding skills, or dive into digital marketing, our AI-driven platform is designed to guide you every step of the way.</p>
+    <br>
+    </div>
+    <p>Plan your career path and generate a customized roadmap for any skill you want to learn</p>
+    <br>
+    <br>
+    <button id="Skillbtn" class="skill-button" onclick="document.getElementById('pricing').scrollIntoView({behavior: 'smooth'});">Skill Track AI &gt;</button>
+    <br>
+    <div class="box">
+    <h1 class ="section title">See SkillAI in Action</h1>
+    <p>Click the video to view it in fullscreen</p>
+    <br>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/XZrckLYqdys" 
+    title="YouTube video player" 
+    frameborder="0" 
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+    allowfullscreen>
+    </iframe>
+    <br>
+    <button id="Skillbtn" class="skill-button" onclick ="document.getElementById('pricing').scrollIntoView({behaviour: 'smooth'});">Skill Track AI &gt;</button>
+    <br>
+    </div>
+    <div class="Learning Path Section">
+        <div>
+    <h1>Organize your learning paths</h1>
+    <p>Save, track progress and edit with ease</p>
+    <ul>
+        <li>Save Your Learning Path</li>
+        <li>Track Your Path Progress</li>
+        <li>Edit Your Learning Path</li>
+    </ul>
+    </div>
+    <img src="Screenshot 2025-08-07 055359.png" alt="Screenshot of SkillTrackAI" height="400" width="600">
+    <p>Keep a record of your progress along learning path</p>
+    <br>
+    
+    <p>Track your Learning Path Progress</p>
+    <br>
+    <br>
+    <br>
+    <button id="Skillbtn" class="skill-button" onclick ="document.getElementById('pricing').scrollIntoView({behaviour: 'smooth'});">Skill Track AI &gt;</button>
+    <br>
+    </div>
+
+   
+    <h1 id="pricing">Pricing</h1>
+     <select id="planSelect" name="planSelect" onchange="selectPlanDetails(this.value)">
+        <option value="">Select a Plan</option>
+        <option value="Monthly">Monthly plan</option>
+        <option value="Yearly">Yearly plan</option>
+        <option value="Lifetime">Lifetime plan</option>  
+        <option value="Free">Free Trial</option>
+        </select>
+    <h2>Choose a plan that you best suite</h2>
+    <div class="plan-details" data-plan="Monthly" style="display:none;">
+    <div class="box">
+        <h3 class ="section title">Monthly</h3>
+        <h2>SkillMaster</h2>
+        <p>2.30$</p>
+        <p>Access to upto 10 learning paths</p>
+        <p>Tracking your progress</p>
+        <p>Save your learning path</p>
+        <p>Access to community support</p>
+        <div class="monthly-plan">
+</div>
+</div>
+</div>
+    <div class="plan-details" data-plan="Yearly" style="display:none;">
+        <div class="box">
+        <h3 class="section title">Yearly</h3>
+        <h2>SkillPro</h2>
+        <p>20.00$</p>
+        <p>Access to 25 learning paths</p>
+        <p>Tracking your progress</p>
+        <p>Save your learning path</p>
+        <p>Access to community support</p>
+        <div class="yearly-plan"> 
+        </div>
+        </div>
+        </div>
+        <div class="plan-details" data-plan="Lifetime" style="display:none;">
+            <div class="box">
+            <h3 class = "section title">Lifetime</h3>
+            <h2>SkillElite</h2>
+            <p>100.00$</p>
+            <p>Access to unlimited learning paths</p>
+            <p>Access to your learning path offline</p>
+            <p>Tracking your progress</p>
+            <p>Save your learning path</p>
+            <p>Early access to advanced features</p>
+            <div class="lifetime-plan">
+            </div>
+            </div>
+            </div>
+    <br>
+    <div class="plan-details" data-plan="Free" style ="display:none;">
+        <div class="box">
+        <h2 class="section title">Free Trial</h2>
+        <h1>Bonus</h1>
+        <p>Get a free 7-day trial of SkillMaster plan when you sign up today!</p>
+        <p>Experience the benefits of personalized learning paths and progress tracking without any commitment.</p>
+        <div class="free-trial-plan">
+        </div>
+        </div>
+        </div>
+        </div>
+    </div>
+
+        <script>
+            function selectPlanDetails(plan) {
+                document.querySelectorAll('.plan-details').forEach(div => {
+                    div.style.display = "none";
+                });
+                if (plan) {
+                    const selected = document.querySelector(`.plan-details[data-plan="${plan}"]`);
+                    if (selected) selected.style.display = "block";
+                    }
+                }
+            function redirectingToPricing(plan) {
+                if (plan) {
+                    window.location.href = `pricing.html?plan=${encodeURIComponent(plan)}`;
+                }
+            }
+        </script>
+
+    <br>
+    <h1>Contact Us</h1>
+    <p>If you have any questions or need assistance, feel free to reach out to us at:</p>
+    <p>Email:<a href="emuturi339@gmail.com"></a>
+
+</body>
+</html>
