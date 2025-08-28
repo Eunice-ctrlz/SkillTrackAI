@@ -1,7 +1,7 @@
 const express = require('express');
 const app = express();
 const bcrypt = require('bcrypt');
-const PORT = 3000;
+const PORT = process.env.PORT || 3000;
 const cors = require('cors');
 app.use(cors()); // Enable CORS for all routes
 
@@ -34,6 +34,8 @@ app.post('/users', async(req, res) => {
   try {
     const hashedPassword = await bcrypt.hash(req.body.password, 10);
     const user = { username: req.body.username, password: hashedPassword };
+
+
     users.push(user);
     console.log('User added:', user);
     res.status(201).json(user);
