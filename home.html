@@ -52,17 +52,21 @@
     <button id="Skillbtn" class="skill-button" onclick ="document.getElementById('pricing').scrollIntoView({behaviour: 'smooth'});">Skill Track AI &gt;</button>
     <br>
     </div>
-    <div class="Learning Path Section">
-        <div>
+    <div class="Learning Path Section"> 
+
     <h1>Organize your learning paths</h1>
-    <p>Save, track progress and edit with ease</p>
+   <div class="side-by-side">
     <ul>
+    <h2 class="section title">Features</h2>
+    <br>
+     <p>Save, track progress and edit with ease</p>
         <li>Save Your Learning Path</li>
         <li>Track Your Path Progress</li>
         <li>Edit Your Learning Path</li>
     </ul>
+     <img src="Screenshot 2025-08-07 055359.png" alt="Screenshot of SkillTrackAI" height="400" width="400">
     </div>
-    <img src="Screenshot 2025-08-07 055359.png" alt="Screenshot of SkillTrackAI" height="400" width="600">
+    </div>
     <p>Keep a record of your progress along learning path</p>
     <br>
     
@@ -156,9 +160,15 @@
         </script>
 
     <br>
+        <form action= https://formspree.io/f/movwprgj method ="POST">
     <h1>Contact Us</h1>
     <p>If you have any questions or need assistance, feel free to reach out to us at:</p>
-    <p>Email:<a href="emuturi339@gmail.com"></a>
-
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" placeholder="Email" required>
+<h2>Message</h2>
+<p>Feel free to send me a message:</p>
+<textarea id="message" name="message" rows="4" cols="50" placeholder="Type your message here..."></textarea>
+<button type="submit">Send</button>
+    </form>
 </body>
 </html>
