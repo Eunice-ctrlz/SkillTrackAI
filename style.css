@@ -140,3 +140,36 @@ option {
     align-items: flex-start;
     gap: 20px;
 }   
+body.login-page {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 30px 25px;
+    background-image:url(background4.jpeg);
+    background-size: cover;
+     background-repeat: no-repeat; 
+    background-position: center 20%;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.login-form input {
+    padding: 30px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    flex-direction: column;
+}
+button {
+    padding: 10px 15px;
+    background-color: burlywood;
+    color: black;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    flex-direction: column ;
+}
+button:hover {
+    background-color: rgb(144, 117, 82);
+}

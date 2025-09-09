@@ -11,6 +11,11 @@ app.use(express.static(path.join(__dirname, 'public'))); // Serve static files f
 
 const users = []
 
+const server = app.listen(PORT, () => {
+    console.log(`Server running on http://localhost:${PORT}`);
+});
+server.setTimeout(0); // disables request timeout
+
 app.get('/', (req, res) => {
   res.send('Server is running!');
 });
